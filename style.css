@@ -1,6 +1,6 @@
 body{
 	padding: 0;
-	height: 100vh;
+	/*height: 100vh;*/
 	background-size:cover;
 	 position: relative;
 }
@@ -36,9 +36,9 @@ h1{
 	color: #37db8c !important;
 	font-size: 5em;
 }
-html{
+/*html{
 	height: 100%;
-}
+}*/
 hr{
 	width: 50%;
 	border-top: 1px solid #f8f8f8;
