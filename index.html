@@ -28,7 +28,8 @@
 			    	</div>
 			       	<div class="collapse navbar-collapse" id="collapse-nav">
 				      <ul class="nav navbar-nav">
-				      	<li class="active"><a href="#suggest">Suggestions</a></li>
+				      	<li class="active"><a href="#Input_text">Input Text</a></li>
+				      	<li><a href="#Suggestions">Suggestions</a></li>
 				      </ul>	
 				     	<ul class="nav navbar-nav navbar-right">
 					      	<li><a href="#">Signup <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>  
@@ -43,8 +44,8 @@
 		<section id="suggest">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6" id="content">
-							<div class="form-group">
+					<div class="col-lg-12" id="content">
+							<div class="form-group" id="Input_text">
 								  <label for="Text"><h1>Enter text:</h1></label>
 								  	<!-- USER INPUT -->
 								  <textarea class="form-control" rows="3" id="Text"></textarea>
@@ -52,45 +53,44 @@
 							</div>
 							<button class="btn btn-default btn-lg" id="go_button"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> Let's Go!</button>
 					</div>
-					<div class="col-sm-6" id="content">
-						<div class="row">
-							<h1>Suggestions:</h1>						
-						</div>
-						<!-- SUGGESTTIONS: -->
-						<div class="row">
-							<!-- actual word -->
-							<div class="col-sm-6 dropdown">
-								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								    Actual Word
-							    <span class="caret"></span>
-						    	  </button>
-							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="actual_word">
-							  	<li class="dropdown-header">Actual Word:</li>
-							    <li><a href="#">Action</a></li>
-							    <li><a href="#">Another action</a></li>
-							    <li><a href="#">Something else here</a></li>		    
-							  </ul>
+					<div class="row">
+						<div class="col-lg-12" id="content">
+							<div class="row">
+								<h1>Suggestions:</h1>				
 							</div>
-							<!-- END ACTUAL WORD -->
-							<!-- Suggested word -->
-							<div class="col-sm-6 dropdown">
-								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								    Suggestion
-							    <span class="caret"></span>
-						    	  </button>
-							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="suggested_word">
-							  	<li class="dropdown-header">Suggested Word:</li>
-							    <li><a href="#">Action</a></li>
-							    <li><a href="#">Another action</a></li>
-							    <li><a href="#">Something else here</a></li>
-							  </ul>
-							</div>
-							<!-- END SUGGESTED WORD -->
-						</div>
+							<!-- SUGGESTIONS: -->
+							<div class="row" id="Suggestions">
+								<!-- actual word -->
+								<div class="col-lg-6 col-md-6 dropdown btn-group" id="Suggestions_box">
+									
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									    Actual Word
+								    	<span class="caret"></span>
+							    		  </button>
+										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="actual_word">
+										  	<li class="dropdown-header">Actual Word:</li>
+										    <li><a href="#">Action</a></li>
+										    <li><a href="#">Another action</a></li>
+										    <li><a href="#">Something else here</a></li>		    
+										  </ul>	
+
+										<input class="form-control" type="text" placeholder="Suggestions..." id="Suggestions_select" readonly>
+									
+								
+								</div>
+								<!-- ACtual word ends -->
+								<div class="col-lg-6 col-md-6">
+									 <div class="panel panel-default">
+									 	 <div class="panel-body" id="suggested_content">
+									 	   Suggested Content
+									 	 </div>
+									</div>
+								</div>
 						<!-- END SUGGESTIONS -->
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
 		</section>	
 	<!-- CONTENT ENDS HERE -->
 	</div>		
