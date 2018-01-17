@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take-the-test</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="game_page.css">
+	<script src="http://www.fastlearning.in/controller/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		 $(document).ready(function() {
+		    $('label').click(function() {
+		        $('label').removeClass('worngans');
+		        $(this).addClass('worngans');
+		    });
+		});
+	</script>
+</head>
+<body id="particles-js" >
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- ENTER CONTENT HERE -->
+	<div class="positioning">
+		<!-- NAVBAR STARTS -->
+		<nav class="navbar navbar-default navbar-fixed-top" id="navbar-example">
+			 	 <div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    	<div class="navbar-header">
+			    	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false">
+			        	<span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      	  </button>
+			      	  <a class="btn btn-lg btn-success" href="http://k-no-chat.azurewebsites.net/" role="button"> <span class="glyphicon glyphicon-menu-left"></span>BACK</a>
+			      	<!--  <a class="navbar-brand" href="http://k-no-chat.azurewebsites.net/">K-NO-CHAT</a> -->
+			    	</div>
+				     	<ul class="nav navbar-nav navbar-right">
+					      	<button class="btn btn-lg btn-primary" type="button">Score <span class="badge" id="score"> 0<span></button>
+					    </ul>
+				</div><!-- /.container-fluid -->
+		</nav>
+		<!-- NAVBAR ENDS -->
+		<h2 class="text-center">Take your test</h2>
+		<hr>
+		<div class="container">
+			<div class="cols-sm-6">
+				<!-- Quiz module starts -->
+				<div class="scp-quizzes-main">
+					<div class="scp-quizzes-data">
+					  <h3>1. What is the answer for the following question?</h3>
+					 <br>
+					 <!-- THE "id" of the input tag and the "for" attribute of the label tag must be the same for the correct answer -->
+			   		 <input type="radio" id="Answer1" name="question1">			 
+			    	   <label for="Answer1" class="answer">A. option 1</label><br/>
+			   		 <input type="radio" id="not_answer" name="question1">
+			       	 <label>B. option 2</label><br/>
+			    	 <input type="radio" id="not_answer" name="question1">
+			         <label>C. option 3</label> <br/>
+			   		 <input type="radio" id="not_answer" name="question1">
+			    	 <label>D. option 4</label> 
+			 		</div>
+			 	</div>
+			 	<br><hr><br><br>
+			 	<!-- quiz module ends -->
+			 	<!-- Quiz module starts -->
+				<div class="scp-quizzes-main">
+					<div class="scp-quizzes-data">
+					  <h3>2. What is the answer for the following question?</h3>
+					 <br>
+					 <!-- THE "id" of the input tag and the "for" attribute of the label tag must be the same for the correct answer |||| add class answer to the label tag of the correct option-->
+			   		 <input type="radio" id="Answer2" name="question2">			 
+			    	   <label for="Answer2" class="answer">A. option 1</label><br/>
+			   		 <input type="radio" id="not_answer" name="question2">
+			       	 <label>B. option 2</label><br/>
+			    	 <input type="radio" id="not_answer" name="question2">
+			         <label>C. option 3</label> <br/>
+			   		 <input type="radio" id="not_answer" name="question2">
+			    	 <label>D. option 4</label> 
+			 		</div>
+			 	</div>
+			 	<br><hr><br><br>
+			 	<!-- quiz module ends -->
+	 		</div>
+	 	</div>
+	</div>
+	<!-- END CONTENT HERE -->
+	<script type="text/javascript" src="game_page.js"></script>
+</body>
+</html>
