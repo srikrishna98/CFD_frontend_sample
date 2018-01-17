@@ -6,10 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
+	<script type="text/javascript" src="pace.js"></script>
+	<link rel="stylesheet" type="text/css" href="pace.css">
 </head>
 <body id="particles-js" data-spy="scroll" data-target="#navbar-example">
-	<script type="text/javascript" src="pace.js"></script>
+	
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<div class ="postioning"> 
@@ -24,7 +25,7 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 			      	  </button>
-			      	 <a class="navbar-brand" href="#">K-NO-CHAT</a>
+			      	 <a class="navbar-brand" href="http://k-no-chat.azurewebsites.net/">K-NO-CHAT</a>
 			    	</div>
 			       	<div class="collapse navbar-collapse" id="collapse-nav">
 				      <ul class="nav navbar-nav">
@@ -62,20 +63,28 @@
 							<div class="row" id="Suggestions">
 								<!-- actual word -->
 								<div class="col-lg-6 col-md-6 dropdown btn-group" id="Suggestions_box">
-									
-										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									    Actual Word
-								    	<span class="caret"></span>
-							    		  </button>
-										  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="actual_word">
-										  	<li class="dropdown-header">Actual Word:</li>
-										    <li><a href="#">Action</a></li>
-										    <li><a href="#">Another action</a></li>
-										    <li><a href="#">Something else here</a></li>		    
-										  </ul>	
-
-										<input class="form-control" type="text" placeholder="Suggestions..." id="Suggestions_select" readonly>
-									
+										<div class ="col-lg-6">
+											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										    Actual Word
+									    	<span class="caret"></span>
+								    		  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="actual_word">
+											  	<li class="dropdown-header">Actual Word:</li>
+											    <li><a href="#">Action</a></li>
+											    <li><a href="#">Another action</a></li>
+											    <li><a href="#">Something else here</a></li>		    
+											  </ul>	
+										 </div> 
+										<div class="col-lg-6 list-group">
+											  <a href="#" class=" list-group-item disabled">
+											    <em><u>Suggested words</u></em>
+											  </a> 
+											  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+											  <a href="#" class="list-group-item">Morbi leo risus</a>
+											  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+											  <a href="#" class="list-group-item">Vestibulum at eros</a>
+										</div>
+																				
 								
 								</div>
 								<!-- ACtual word ends -->
@@ -96,6 +105,6 @@
 	</div>		
 	 <script type="text/javascript" src="particles.js"></script>
 	 <script type="text/javascript" src="app.js"></script>
-	 <script type="text/javascript" src ="process.js"></script>
+	 <script type="text/javascript" src="process.js"></script>
 </body>
 </html>
